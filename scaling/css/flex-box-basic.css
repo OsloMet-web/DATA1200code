@@ -21,7 +21,7 @@ div {
 .container-flexbox {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; /* These two lines, shorthand: flex-flow: row wrap; */
+    flex-wrap: wrap; /* These two lines, shorthand for 'flex-flow: row wrap;' */
     justify-content: left;
 }
 
