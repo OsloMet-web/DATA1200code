@@ -16,6 +16,7 @@
         font-style: italic;
         padding-left: 4rem;
     }
+    /** If a site _always_ have an ingress after H1, or _always_ styles text directly after an image differently, this may be easier than adding a class. But in many cases, Low-code tools will use classes extensively **/
 
     ul { /** Default Unordered list: Bolder, and background colour **/
         font-weight: 600;
@@ -50,13 +51,15 @@
                     &lt;li&gt;&lt;/li&gt;
                     &lt;UL&gt; (3rd Level, grand-child)
                         &lt;li&gt;&lt;/li&gt;
-                        &lt;UL&gt;  (4th Level, 'any decendant')
+                        &lt;UL&gt;  (4th Level, 'any decendant', this is grand-child of L2 as well*)
                             &lt;li&gt;&lt;/li&gt;
                         &lt;/ul&gt;
                     &lt;/ul&gt;
                 &lt;/ul&gt;
             &lt;/ul&gt;
         </pre>
+
+        (* the L4, that is both an "any" descendant of L1, grand-child of L2 and child of L3 complicates things. But without switching between UL and OL, I found no simple work-around. You will have to accept that this much nesting will always be slightly complex.)
 
         <ul>
             <li>Main category</li>
