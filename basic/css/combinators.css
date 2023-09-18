@@ -1,63 +1,28 @@
-/** FIRST we have regular CSS, classes and a pseudo-class **/
-body {
-    font-size: 1.2rem;
-    margin-left: 5rem;
-    /* margin-right: 1rem; */
-}
-
-/* here, several elements are styled in one sentence — no relationship between these elements */
-h1, h2, p {
+main {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-h1 {
-    font-weight: bold;
-}
-
-h2 {
-    font-weight: lighter;
-}
-
-
-
-/** SECOND, we have decendants, a form of combinators **/
-/* Mozilla has a good introduction! 
-https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators */ 
-
-/* first, I make the box white, so that all the headings, paragraphs and such are the "wrong" colour */
-.all {
-    background-color: antiquewhite;
-    padding-left: 12px; /* padding == inside "box", margin would have been outside */
-    padding-top: 2px;
-    padding-bottom: 6px;
-}
-
-/* then list the elements that should have a different colour within the "all" div */
-.all li {
-    color: darkgreen;
-}
-
-.all code {
+h1+p {
+    color: darkslategrey;
     font-weight: 600;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding-left: 4rem;
 }
 
-/** THEN we have direct-children only **/
-.child {
-    background-color: lightcyan;
-    padding-left: 12px; /* padding == inside "box", margin would have been outside */
-    padding-top: 2px;
-    padding-bottom: 6px;
+ul { /** Default Unordered list: Bolder, and background colour **/
+    font-weight: 600;
+    color: darkslategrey;
+    background-color: antiquewhite;
 }
 
-/* <li> is a direct child of <ul>, NOT of the <div class="child">-element; hence this is ignored for the box, but I added the class to an UL as well */
-.child > li {
-    color: darkgreen;
+
+ul > ul { /** Unordered lists that are FIRST child of an UL: change font-weight to 400, else as default UL **/
+    font-weight: 400;
 }
 
-p + code {
-    color: darkgoldenrod;
-}
-
-h2.centre { /* valid: Yes; usefull: ?? */
-    text-align: center; 
+ul * ul { /** Unordered lists that are GRAND child of an UL: change font-weight to 200, change bg-colour **/
+    font-weight: 200;
+    background-color: aqua;
 }

@@ -3,7 +3,36 @@
 <head>
     <title>Combining selectors</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/combinators.css">
+    <style>
+    main {
+        font-family: Helvetica, Arial, sans-serif;
+    }
+
+    h1 + p { /** Adjacent: So directly after **/
+        color: darkslategrey;
+        font-weight: 600;
+        font-size: larger;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        padding-left: 4rem;
+    }
+
+    ul { /** Default Unordered list: Bolder, and background colour **/
+        font-weight: 600;
+        color: darkslategrey;
+        background-color: antiquewhite;
+    }
+
+
+    ul > ul { /** Unordered lists that are FIRST child of an UL: change font-weight to 400, else as default UL **/
+        font-weight: 400;
+    }
+
+    ul * ul { /** Unordered lists that are GRAND child of an UL: change font-weight to 200, change bg-colour **/
+        font-weight: 200;
+        background-color: aqua;
+    }
+    </style>
 </head>
 
 <body>
