@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/complete.css">
+    <link rel="stylesheet" type="text/css" href="css/completegrid.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Complete page, simple</title>
+    <title>Complete page, grid</title>
 </head>
 
 <body>
@@ -17,8 +17,8 @@
                 </label>
 
                 <ul class="menu">
-                    <li class="active">Simple-page</li>
-                    <li><a href="completegrid.html">Grid-example</a></li>
+                    <li><a href="complete.html">Simple-page</a></li>
+                    <li class="active">Grid-example</li>
                     <li>Menu three</li>
                     <li>Menu four</li>
                 </ul>
@@ -26,9 +26,9 @@
         </nav>
     </header>
 
-    <main>
-        <article>
-            <div class="main-box">
+    <main class="wrapper">
+        <article class="main-box">
+            <div>
                 <h1>European Project Semester as exhange</h1>
                 <p class="ingress">In the European Project Semester (EPS), students from comp.sci., design, and engineering solve real-world projects in groups, with students from different European universities.</p>
                 <p>
@@ -54,7 +54,7 @@
             </div>
         </article>
 
-        <aside>
+        <aside class="aside">
             <h2>Quotes from students</h2>
             <p>EPS is a program with a lot of room for your own input and lots of time to work on the project and less classes</p>
             <p>Interdisciplinary, fun, project based working with a lot of spare time to travel!</p>
@@ -62,8 +62,7 @@
             <p>It is a amazing experience where you meet people from all over Europe and learn to work group with them.</p>
         </aside>
     </main>
-
-    <footer>
+    <footer class="footergrid">
         <div class="footerleft">
             <p>Contact: no-reply@OsloMet.no</p>
         </div>
@@ -72,6 +71,9 @@
         </div>
         <div class="footerright">
             <p>OsloMet is one of <a href="http://europeanprojectsemester.eu/providers">19 providers of a European Project Semester</a>.</p>
+        </div>
+        <div class="footerbottom">
+            &nbsp;
         </div>
     </footer>
 </body>

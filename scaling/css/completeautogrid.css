@@ -17,108 +17,30 @@ h1 {
     color: #363636;
 }
 
-@media (max-width: 700px) {
-main, footer {
-    margin-left: 1rem;
-    margin-top: 0px;
+.pageheading {
+    margin-left: 2rem;
+    width: minmax(auto, 634px);
 }
 
-article, footer {
-    width: 90vw;
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 212px);
+  }
+
+@media (max-width: 847px) {
+    .wrapper {
+        justify-content: center;
+    }
 }
 
-aside {
-    box-sizing: border-box;
-    width: 90vw;
-    background-color: blanchedalmond;
-    padding-top: 0.3rem;
-    padding-bottom: 0.5rem;
-    padding-left: 0.5rem;
-    padding-right: 0.4rem;
-}
-
-.footerleft, .footermidle, .footerright {
-    padding-top: 0.6rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 0.8rem;
+.minicontent {
+    margin: 2px;
+    padding: 2px;
+    border-radius: 4%;
     border-style: solid;
-    border-color: black;
     border-width: 1px;
+    background-color: antiquewhite;
 }
-
-aside > h2 {
-    color: darkslategray;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-aside > p {
-    font-family: 'Times New Roman', Times, serif;
-    font-style: oblique;
-    font-size: larger;
-}
-
-.secondary-box {
-    background-image: url(https://www.oslomet.no/var/oslomet/storage/images/_aliases/xxlarge/4/4/8/0/10844-16-eng-GB/makerspace_2_foto_Kristin_Mehlum_cropped.jpg);
-    background-size: cover;
-    width: 90vw;
-    height: 60vw;
-}
-}
-
-@media (min-width: 701px) {
-    main, footer {
-        margin-left: 4rem;
-        margin-top: 0px;
-    }
-    
-    article, footer {
-        width: 60vw;
-        max-width: 800px;
-    }
-    
-    aside {
-        box-sizing: border-box;
-        width: 60vw;
-        max-width: 800px;
-        background-color: blanchedalmond;
-        padding-top: 0.6rem;
-        padding-bottom: 1rem;
-        padding-left: 1rem;
-        padding-right: 0.8rem;
-    }
-
-    .footerleft, .footermidle, .footerright {
-        padding-top: 0.6rem;
-        padding-bottom: 1rem;
-        padding-left: 1rem;
-        padding-right: 0.8rem;
-        border-style: solid;
-        border-color: black;
-        border-width: 1px;
-    }
-    
-    aside > h2 {
-        color: darkslategray;
-        font-family: 'Times New Roman', Times, serif;
-    }
-    
-    aside > p {
-        font-family: 'Times New Roman', Times, serif;
-        font-style: oblique;
-        font-size: larger;
-    }
-    
-    .secondary-box {
-        background-image: url(https://www.oslomet.no/var/oslomet/storage/images/_aliases/xxlarge/4/4/8/0/10844-16-eng-GB/makerspace_2_foto_Kristin_Mehlum_cropped.jpg);
-        background-size: cover;
-        width: 60vw;
-        max-width: 800px;
-        height: 40vw;
-        max-height: 530px;
-    }
-}
-
 
 /** TOP MENU — Hamburger **/
 .active {
