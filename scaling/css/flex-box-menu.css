@@ -85,9 +85,6 @@
         padding-left: 8px;
         padding-top: 2px; /* A bit of space above the burger */
         padding-bottom: 4px; /* A bit of space below the burger */
-    }
-
-    .burger-navigation {
         display: flex;
         flex-direction: row;
         align-items: top;
