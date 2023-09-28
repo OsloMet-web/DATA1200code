@@ -24,7 +24,7 @@
         padding-right: 0.4rem;
     }
     
-    .footerleft, .footermidle, .footerright {
+    .footerleft, .footermiddle, .footerright {
         padding-top: 0.6rem;
         padding-bottom: 1rem;
         padding-left: 1rem;
@@ -67,7 +67,7 @@
         padding-right: 0.8rem;
     }
 
-    .footerleft, .footermidle, .footerright {
+    .footerleft, .footermiddle, .footerright {
         box-sizing: border-box;
         padding-top: 0.6rem;
         padding-bottom: 1rem;
@@ -111,7 +111,7 @@
     }
 
     .aside {
-        grid-column: 3/4;
+        grid-column: 3 / 4;
         grid-row: 1;
     }
 
@@ -123,10 +123,9 @@
     .footerleft {
         grid-column: 1 / 2;
         grid-row: 3;
-        gap: 0.2rem;
     }
 
-    .footermidle {
+    .footermiddle {
         grid-column: 2 / 3;
         grid-row: 3;
     }
