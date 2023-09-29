@@ -54,7 +54,7 @@
 }
 
 @media (min-width: 801px) {
-    main, footer {
+    main {
         margin-left: 2rem;
         margin-top: 0px;
     }
@@ -117,7 +117,7 @@
 
     .footergrid {
         display: grid;
-        grid-template-columns: auto 40vw auto 40px;
+        grid-template-columns: auto 40vw auto;
     }
 
     .footerleft {
@@ -140,7 +140,7 @@
         background-color: var(--topmenucolour);
         height: 20px;
         margin-left: -40px;
-        grid-column: 1 / 5;
+        grid-column: 1 / 4;
         grid-row: 4;
     }
 }
