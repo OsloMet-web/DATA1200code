@@ -71,12 +71,12 @@ aside > p {
         margin-left: 4rem;
         margin-top: 0px;
     }
-    
+
     article, footer {
         width: 60vw;
         max-width: 800px;
     }
-    
+
     aside {
         box-sizing: border-box;
         width: 60vw;
@@ -97,18 +97,18 @@ aside > p {
         border-color: black;
         border-width: 1px;
     }
-    
+
     aside > h2 {
         color: darkslategray;
         font-family: 'Times New Roman', Times, serif;
     }
-    
+
     aside > p {
         font-family: 'Times New Roman', Times, serif;
         font-style: oblique;
         font-size: larger;
     }
-    
+
     .secondary-box {
         background-image: url(https://www.oslomet.no/var/oslomet/storage/images/_aliases/xxlarge/4/4/8/0/10844-16-eng-GB/makerspace_2_foto_Kristin_Mehlum_cropped.jpg);
         background-size: cover;

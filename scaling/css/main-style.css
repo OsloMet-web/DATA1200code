@@ -2,6 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Ingress applied to first paragraphs after H1 or H2 only */
 .ingress {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.2em;
