@@ -1,9 +1,0 @@
-	•	HOME
-	•	Simple flex-box
-	•	Chaotic flex-boxes
-	•	Menu w/ flex
-	•	Moving on
-Fun with flex-boxes
-Please scale the webpage and see what happens to the menu.
-On the next pages, we shall first introduce flex-boxes, then manipulate them a bit so they "bounce" left to right based on a media-query (@media). Then I show some menus with different flex-styling. Styles 1 to 3 are relevant for boxes with text as well. The fourth example is a simple "hamburger menu" without JavaScript.
-Lastly, we move on to the alternative: Grid.
