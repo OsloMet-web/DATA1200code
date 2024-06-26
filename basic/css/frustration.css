@@ -1,3 +1,68 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  margin: 0px;
+}
+
+/* Because margin is set to 0px above, all boxes will will the browser width totally, rather than leave a tiny white line on all sides. However, that means that text will be squeezed into the left margin, unless we add something like p {margin-left: 4px;}*/
+p {
+  margin-left: 6px;
+}
+
+/* Pseudo-classes: 'a' is class; ':active' is pseudo */
+a {text-decoration: underline;} /* just an example of styling the 'a' (link) element */
+  /* Below, we use pseudo-classes to style _states_ of elements 
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes */
+      a:active {color:darkblue;}
+      a:visited {color: purple;} /* try making it fuchsia :-D */
+/* If you end up working with webdesign, pseudo-classes and pseudo-elements are useful */
+
+.bodybox-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bodybox-content {
+  /* background: rgb(192, 192, 192); un-comment to see area of box */
+  padding: 2vw;
+  width: 80vw;
+  max-width: 800px;
+  margin-top: 10px;
+  line-height: 1.4em;
+  font-size: 1.2em;
+  border-left: 1px dashed grey;
+  border-right: 1px dashed grey;
+}
+
+.ingress {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.centre {
+  text-align: center;
+}
+
+footer { /* styles the entire semantic element "footer", which should only contain non-essential info */
+  background-color: #ccc;
+}
+/* more on semantic elements: https://www.w3schools.com/html/html5_semantic_elements.asp */
+
+/* Decorations */
+.dashborder {
+  border: 2px grey dashed;
+}
+
+.fullborder {
+  margin: 1em;
+  padding: 0.4em;
+  border-width: 4px;
+  border-style: dotted;
+  border-color: darkslategrey;
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

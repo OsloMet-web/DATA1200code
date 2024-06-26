@@ -4,9 +4,9 @@ body {
     margin: 0px;
 }
 
-/* Because margin is set to 0px above, all boxes will will the browser width totally, rather than leave a tiny white line on all sides. However, that means that text will be squeezed into the left margin, unless we add something like p {margin-left: 4px;}*/
+/* Because margin is set to 0px above, all boxes will fill the browser-width totally, rather than leave a tiny white line on all sides. However, that means that text will be squeezed into the left margin, unless we add something like p {margin-left: 4px;}*/
 p {
-    margin-left: 6px;
+    margin-left: 10px;
 }
 
 /* Pseudo-classes: 'a' is class; ':active' is pseudo */

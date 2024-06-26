@@ -3,7 +3,7 @@
 <head>
     <title>About DATA1200</title>
     <meta charset="UTF-8">
-    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <!-- <link type="text/css" rel="stylesheet" href="css/main.css"> -->
 </head>
 
 <body>
@@ -18,22 +18,23 @@
 
     <h2>Showcasing utf-8</h2>
     <h3>æØå</h3>
-        <p>These may be written as <code> '&amp;aelig;', '&amp;Oslash;', '&amp;aring;'</code> as well</p>
+        <p>These may be written as <code> '&amp;aelig;', '&amp;Oslash;', '&amp;aring;'</code> as well: &aelig; &Oslash; &aring;</p>
     <h3>カンバン</h3>
     <p>The original "ASCII" had only basic American-English characters. Even missin the '&aelig;' that is an aceptable, though arcaic, character in British-English.</p>
     <h3>看板</h3>
         <p>Unicode (utf-8) even covers emojies &#9994;</p>
     <h3><em>That went well! (Not!😝)</em></h3>
-        <p><em>In spring, when I prepared this lecture, Safari would display "international" characters incorrectly if you forgot the</em> <code>&lt;meta charset="utf-8"&gt;</code> <em>tag, while Chrome would "assume" the UTF-8. Now, Chrome, Firefox & Safari <strong>all</strong> display characters correctly without the meta-tag!</em></p>
+        <p><em>In 2023, when I prepared a similar lecture, Safari would display "international" characters incorrectly if you forgot the</em> <code>&lt;meta charset="utf-8"&gt;</code> <em>tag, while Chrome would "assume" the UTF-8. Now, Chrome, Firefox & Safari <strong>all</strong> display characters correctly without the meta-tag!</em></p>
         <p><a href="https://www.w3schools.com/charsets/default.asp">Is this code-snippet now obsolete?</a></p>
     <!-- Comments are green in VS Code -->
-    <h2>Just needed a place to mention 'code' in HTML</h2>
-    <p>Using first &lt;code&gt; then &lt;pre&gt; to wrtite a CSS-snippet</p>
+    <h2>How to show examples of code in HTML</h2>
+    <p>Using first &lt;code&gt; then &lt;pre&gt; to write a CSS-snippet</p>
         <code>
         h1 {
             font-weight: bold;
         }
         </code>
+        <p>(Above: 'code'-element; below: 'pre'-element)</p>
         <pre>
         h1 {
             font-weight: bold;

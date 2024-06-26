@@ -1,35 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Combining selectors</title>
+    <title>Content- vs Border-box</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/combinators.css">
     <style>
         div {
-        width: 360px;
+        width: 500px;
         padding: 20px;
-        border: 8px solid red;
-        background: yellow;
+        margin: 10px;
+        border: 8px solid rgb(160, 92, 92);
+        background: rgb(143, 226, 217);
         }
 
-.content-box {
-  box-sizing: content-box;
-  /* Total width: 160px + (2 * 20px) + (2 * 8px) = 216px
-     Total height: 80px + (2 * 20px) + (2 * 8px) = 136px
-     Content box width: 160px
-     Content box height: 80px */
-}
+.content-box {box-sizing: content-box;}
+.content-box > p {background-color: white;}
 
-.border-box {
-  box-sizing: border-box;
-  /* Total width: 160px
-     Total height: 80px
-     Content box width: 160px - (2 * 20px) - (2 * 8px) = 104px
-     Content box height: 80px - (2 * 20px) - (2 * 8px) = 24px */
-}
+.border-box {box-sizing: border-box;}
+.border-box > p {background-color: white;}
 
 body {
-    margin: 10;
+    margin: 20px;
 }
     </style>
 </head>
@@ -37,15 +28,28 @@ body {
 <body>
     <h1>Example from w3schools!</h1>
     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing">https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing</a></p>
+    <p>The only difference between these two boxes is "box-sizing". Both have these CSS-properties:</p>
+    <pre>
+        div {
+            width: 500px;     <== This is the interesting property + value pair
+            padding: 20px;
+            margin: 10px;
+            border: 8px solid rgb(160, 92, 92);
+            background: rgb(255, 255, 175);
+            }
+    </pre>
     <div class="content-box">
-        <p>This is a content-box, the default.</p>
-        <p>The width and height properties include the content, but does not include the padding, border, or margin. For example, .box {width: 350px; border: 10px solid black;} renders a box that is 370px wide.</p>
+        <p>This is a <strong>content-box</strong>, the default.</p>
+        <p>TOTAL width = 
+            <br />'width' + 'padding' (inside) + border (red line).
+            <br />=> total width (outside border) > CSS-width.</p>
     </div>
+    <p>&nbsp;</p><!--  -->
     <div class="border-box">
         <p>This is a <strong>border-box</strong>, not a default.</p>
-        <p>The width and height properties include the content, padding, and border, but do not include the margin. Note that padding and border will be inside of the box. 
-        </p>
-        <p>For example, .box {width: 350px; border: 10px solid black;} renders a box that is 350px wide, with the area for content being 330px wide. The content box can't be negative and is floored to 0, making it impossible to use border-box to make the element disappear.</p>
+        <p>TOTAL width = 
+            <br />'width', including 'padding' (inside) & border (red line).
+            <br />=> total width (outside border) = CSS-width.</p>
     </div>
 </body>
 </html>
